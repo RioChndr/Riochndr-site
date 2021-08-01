@@ -1,77 +1,49 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
+  <div>
+    <h2 class="mb-6">Hello fellows</h2>
+    My name is
+    <h1>
+      <a href="#">Rio chandra</a>
+    </h1>
+    <div>
+      Yes, I'm a programmer {{ myAge }} Years old. Website developer. Experience
+      {{ yearsExperience }} years create website, mobile apps and some personal
+      project. I create a beautiful and fully functional website to help company
+      to solve their complex customer problem. <br />
+      currently i'm working at
+      <a href="http://sahaware.co.id" target="_blank" rel="noopener noreferrer"
+        >PT. Sahaware Technology Indonesia</a
+      >. Take a look <nuxt-link to="/project"> my project </nuxt-link>
+    </div>
+    <div>
+      I love challange and learn a weird programming languange like brainf*ck
+      languange. I show you how to write my name in brainf*ck languange
+    </div>
+    <v-col md="6">
+      <fieldset class="pa-3">
+        <legend>Brainf*ck Programming Languange</legend>
+        <!-- eslint-disable-next-line vue/no-parsing-error -->
+        >++++ ++++[>++++ ++++ ++<-]>++.>++++ ++++[>++++ ++++ ++<-]>++---- ---- -.++++ ++.>>++++[<++++ ++++>-]<.>>++++ ++++[<++++ ++++>-]<+++.>>++++ ++++[<++++ ++++>-]<++++ ++++.>>++++ ++++[<++++ ++++>-]<+.<++++ ++.>+++.<<<<+++.>>--. <br /> Run this code at
+        <a
+          target="_blank"
+          href="https://www.tutorialspoint.com/execute_brainfk_online.php"
+          >Brainf*ck executor</a
+        >
+      </fieldset>
     </v-col>
-  </v-row>
+    <ContactMe />
+  </div>
 </template>
+
+<script>
+export default {
+  computed: {
+    yearsExperience() {
+      return new Date().getFullYear() - 2015
+    },
+    myAge() {
+      return new Date().getFullYear() - 1999
+    },
+  },
+}
+</script>
