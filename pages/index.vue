@@ -5,9 +5,14 @@
     <h1>
       <a href="#">Rio chandra</a>
     </h1>
-    <div>
-      Yes, I'm a programmer {{ myAge }} Years old. Website developer. Experience
-      {{ yearsExperience }} years create website, mobile apps and some personal
+    <blockquote class="my-6">
+      <i>
+      "To make one good action succeed another, is the perfection of goodness." - Ali bin Abi Thalib
+      </i>
+    </blockquote>
+    <div class="mb-3">
+      I'm an {{ myAge }} Year old young programmer. Website developer. Experience
+      {{ yearsExperience }} year create website, mobile apps and some personal
       project. I create a beautiful and fully functional website to help company
       to solve their complex customer problem. <br />
       currently i'm working at
@@ -15,9 +20,26 @@
         >PT. Sahaware Technology Indonesia</a
       >. Take a look <nuxt-link to="/project"> my project </nuxt-link>
     </div>
+    <div class="mb-3">
+      Programming languange and framework :
+      <ul>
+        <li>
+          <a href="http://php.net" target="_blank" rel="noopener noreferrer">PHP</a>. PHP is my first programming languange since 2013
+        </li>
+        <li>
+          <a href="http://javascript.com" target="_blank" rel="noopener noreferrer">Javascript</a>. Currently i'm working as front end developer using javascript programming languange
+        </li>
+        <li>
+          <a href="http://vuejs.org" target="_blank" rel="noopener noreferrer">Vue js</a>. I ♥ Vue JS !!. this framework so simple the flexibility and rules framework fit with my project. I have working using vue js more than {{ yearsWorkingVue }} years.
+        </li>
+        <li>
+          <a href="http://nuxtjs.org" target="_blank" rel="noopener noreferrer">Nuxt Js</a>. I use nuxt as standard project structur for vue js project.
+        </li>
+      </ul>
+    </div>
     <div>
       I love challange and learn a weird programming languange like brainf*ck
-      languange. I show you how to write my name in brainf*ck languange
+      languange. I show you how to write "RIO CHANDRA" in brainf*ck languange
     </div>
     <v-col md="6">
       <fieldset class="pa-3">
@@ -44,6 +66,9 @@ export default {
     myAge() {
       return new Date().getFullYear() - 1999
     },
+    yearsWorkingVue(){
+      return new Date().getFullYear() - 2017
+    }
   },
 }
 </script>
