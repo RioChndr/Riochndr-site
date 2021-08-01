@@ -22,6 +22,7 @@
         </div>
       </v-col>
     </v-row>
+    <hr>
     <div class="mt-4">
       <h4>Interested to create awesome project with me ?</h4>
       <div class="mb-3">
