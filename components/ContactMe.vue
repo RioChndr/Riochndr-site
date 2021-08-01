@@ -29,6 +29,18 @@
         </a>
       </div>
       <div class="mb-2">
+        <a
+          href="https://github.com/RioChndr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h5>
+            <v-icon>mdi-github</v-icon>
+            Github
+          </h5>
+        </a>
+      </div>
+      <div class="mb-2">
         <a href="mailto:riochandra4@gmail.com">
           <h5>
             <v-icon>mdi-email</v-icon>
