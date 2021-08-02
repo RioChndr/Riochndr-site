@@ -2,5 +2,9 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+@font-face {
+  font-family: Consolas;
+  src: url('~assets/font/Consolas.ttf');
+}
 
 $body-font-family: 'Consolas';
