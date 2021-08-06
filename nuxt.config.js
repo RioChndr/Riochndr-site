@@ -62,6 +62,10 @@ export default {
           property: 'og:image:alt',
           content: meta.title
         },
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+        { hid: 'image', property: 'image', content: meta.image },
+        { hid: 'twitter:type', name: 'twitter:type', content: 'website' },
+        { hid: 'og:type', name: 'og:type', content: 'website' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
