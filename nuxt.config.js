@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import meta from './meta-web.js'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
@@ -15,7 +16,52 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: meta.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: meta.description
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: meta.image
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: meta.title
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: meta.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: meta.description
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: meta.image
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image:secure_url',
+          content: meta.image
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: meta.title
+        },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
