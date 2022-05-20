@@ -18,7 +18,7 @@
       </div>
       <div class="mb-2">
         <a
-          href="https://www.instagram.com/riochndr/"
+          href="https://www.instagram.com/rio_chndr"
           target="_blank"
           rel="noopener noreferrer"
         >
